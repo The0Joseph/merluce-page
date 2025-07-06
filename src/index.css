@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root{
+    --color-primary: #2D4A22;
+}
+
+.text-color-primary {
+    color: var(--color-primary);
+}
+
+.bg-color-primary{
+    background-color: var(--color-primary);
+}
+
+.border-color-primary{
+    border-color: var(--color-primary);
+}
