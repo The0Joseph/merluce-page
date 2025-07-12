@@ -15,7 +15,7 @@ const collaborators = [
 ]
 export const CollaboratorsSection = () => {
     return (
-        <div className="w-full container  mx-auto font-serif py-25">
+        <div className="w-full container  mx-auto font-serif py-10 md:py-25">
             <h2 className="text-lg text-center my-10">NUESTROS COLABORADORES</h2>
             <Swiper
                 modules={[Navigation, Autoplay]}
@@ -25,8 +25,8 @@ export const CollaboratorsSection = () => {
                 // autoplay={{ delay: 5500 }}
                 loop={true} // para colocar la transicion infinit
                 breakpoints={{
-                    320: { slidesPerView: 1 },
-                    640: { slidesPerView: 2 },
+                    320: { slidesPerView: 2.5 },
+                    640: { slidesPerView: 3 },
                     1024: { slidesPerView: 5 },
                 }}
                 className=""

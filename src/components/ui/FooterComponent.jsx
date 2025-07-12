@@ -1,12 +1,12 @@
 import LogoMerluceHrz from '../../assets/img/LogoMerluceHrz.png'
 export const FooterComponent = () => {
     return (
-        <div className="my-10 mx-auto w-full container text-color-primary font-serif">
-            <div className="grid grid-cols-3 ">
-                <div>
+        <div className="my-10 mx-auto w-full container text-color-primary font-serif ">
+            <div className="grid grid-cols-1 md:grid-cols-3 m-4 ">
+                <div className='m-auto my-5 md:m-0'>
                     <img className='w-50' src={LogoMerluceHrz} alt="" />
                 </div>
-                <div className="flex gap-10">
+                <div className="flex flex-col md:flex-row md:gap-10 ">
                     <div>
                         <div className='my-2'>
                             <p>+51 914 505 101</p>
@@ -19,7 +19,7 @@ export const FooterComponent = () => {
 
                     </div>
                     <div>
-                        <ul className='leading-relaxed pl-20'>
+                        <ul className='leading-relaxed md:pl-20'>
                             <li className='my-2'><a href="">Política de Privacidad</a></li>
                             <li className='my-2'><a href="">Declaracion de Accesibilidad</a></li>
                             <li className='my-2'><a href="">Política de Envío Términos y Condiciones</a></li>
@@ -27,7 +27,7 @@ export const FooterComponent = () => {
                         </ul>
                     </div>
                 </div>
-                <div className='ml-30'>
+                <div className='my-5 md:ml-30'>
                     <h3 className='text-xl mb-4'>Politica de Privacidad</h3>
                     <div>
                         <label htmlFor="">Email</label>

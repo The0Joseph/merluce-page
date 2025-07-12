@@ -19,9 +19,9 @@ const commetsList = [
 
 export const CommentsSection = () => {
     return (
-            <div className="flex border-color-primary border my-9">
+            <div className="flex flex-col md:flex-row border-color-primary border my-9">
                 {Array.isArray(commetsList) && commetsList.map((comment) => (
-                    <div key={comment.id} className=" font-serif text-center p-25 border-color-primary border-r" >
+                    <div key={comment.id} className=" font-serif text-center p-15 md:p-25 border-color-primary border-r" >
                         <h1 className="mb-5 text-xl">{ comment.autor }</h1>
                         <p className="leading-relaxed">"{ comment.comment }"</p>
                     </div>

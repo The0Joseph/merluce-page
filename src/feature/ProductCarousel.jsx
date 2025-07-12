@@ -20,11 +20,11 @@ const images = [
 export const ProductCarousel = () => {
 
     return (
-        <div className=" h-svh flex justify-center items-center">
-            <div>
+        <div className= " mt-45 mb-25 md:h-svh w-full overflow-x-hidden flex justify-center items-center">
+            <div className="w-full max-w-screen-lg px-4">
                 <SectionTitle />
                 <div className="w-full container  mx-auto font-serif ">
-                    <h2 className="text-xl my-3">Los más vendidos</h2>
+                    <h2 className="text-lg md:text-xl my-3">Los más vendidos</h2>
                     <Swiper
                         modules={[Navigation, Pagination]}
                         slidesPerView={5}
@@ -34,11 +34,11 @@ export const ProductCarousel = () => {
                         // autoplay={{ delay: 5500 }}
                         loop={false} // para colocar la transicion infinit
                         breakpoints={{
-                            320: { slidesPerView: 1 },
+                            320: { slidesPerView: 2.5 },
                             640: { slidesPerView: 2 },
                             1024: { slidesPerView: 5 },
                         }}
-                        className="rounded-2xl overflow-hidden"
+                        className="max-w-full rounded-2xl overflow-hidden"
                     >
                         {images.map((src, index) => (
                             <SwiperSlide key={index}>
@@ -48,8 +48,8 @@ export const ProductCarousel = () => {
                                         alt={`Slide ${index + 1}`}
                                         className="w-full h-64 object-cover rounded-xl shadow-md"
                                     />
-                                    <div className="border p-2 rounded-sm my-3 border-color-primary hover:bg-[#2D4A22] hover:text-white" >
-                                        <a href="#" className="text-center font-sans text-sm">
+                                    <div className="border rounded-sm my-3 border-color-primary hover:bg-[#2D4A22] hover:text-white" >
+                                        <a href="#" className="text-center font-sans text-sm  p-2 block ">
                                             <p className="">Agregar al carrito</p>
                                         </a>
                                     </div>
