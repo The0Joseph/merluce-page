@@ -68,7 +68,7 @@ const productList = [
     },
 ]
 
-export const ProductCarousel = () => {
+export const ProductCarousel = ({onAddToCard}) => {
 
     return (
         <div className= " mt-10 mb-25 md:h-svh w-full overflow-x-hidden flex justify-center items-center">
@@ -91,21 +91,21 @@ export const ProductCarousel = () => {
                         }}
                         className="max-w-full rounded-2xl overflow-hidden"
                     >
-                        {productList.map(({id, name, price, image}) => (
-                            <SwiperSlide key={id}>
+                        {productList.map((product) => (
+                            <SwiperSlide key={product.id}>
                                 <div className="flex flex-col h-[320px] md:h-[370px] p-2 bg-white rounded-xl shadow-md">
                                     <img
-                                        src={image}
-                                        alt={`Slide ${id + 1}`}
+                                        src={product.image}
+                                        alt={`Slide ${product.id + 1}`}
                                         className="w-full h-30 md:h-64 object-cover rounded-xl shadow-md"
                                     />
-                                    <p className="line-clamp-2 text-sm md:text-sm my-2">{name}</p>
-                                    <p className="text-lg text-[#2D4A22] mt-1">S/ { price.toFixed(2) }</p>
-                                    <div className="border  rounded-sm my-3 border-color-primary hover:bg-[#2D4A22] hover:text-white" >
-                                        <a href="#" className="text-center font-sans text-sm  p-2 block ">
+                                    <p className="line-clamp-2 text-sm md:text-sm my-2">{product.name}</p>
+                                    <p className="text-lg text-[#2D4A22] mt-1">S/ { product.price.toFixed(2) }</p>
+                                    <button onClick={()=>onAddToCard(product)} className="border flex justify-center cursor-pointer rounded-sm my-3 border-color-primary hover:bg-[#2D4A22] hover:text-white" >
+                                        <div className="font-sans text-sm  p-2 ">
                                             <p className="">Agregar al carrito</p>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </button>
                                 </div>
                             </SwiperSlide>
                         ))}
