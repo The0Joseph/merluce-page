@@ -20,11 +20,11 @@ const images = [
 export const ProductCarousel = () => {
 
     return (
-        <div className= " mt-45 mb-25 md:h-svh w-full overflow-x-hidden flex justify-center items-center">
-            <div className="w-full max-w-screen-lg px-4">
+        <div className= " mt-10 mb-25 md:h-svh w-full overflow-x-hidden flex justify-center items-center">
+            <div className="w-full  px-4">
                 <SectionTitle />
                 <div className="w-full container  mx-auto font-serif ">
-                    <h2 className="text-lg md:text-xl my-3">Los más vendidos</h2>
+                    <h2 className="text-lg md:text-xl my-5">Los más vendidos</h2>
                     <Swiper
                         modules={[Navigation, Pagination]}
                         slidesPerView={5}
@@ -46,7 +46,7 @@ export const ProductCarousel = () => {
                                     <img
                                         src={src}
                                         alt={`Slide ${index + 1}`}
-                                        className="w-full h-64 object-cover rounded-xl shadow-md"
+                                        className="w-full h-30 md:h-64 object-cover rounded-xl shadow-md"
                                     />
                                     <div className="border rounded-sm my-3 border-color-primary hover:bg-[#2D4A22] hover:text-white" >
                                         <a href="#" className="text-center font-sans text-sm  p-2 block ">

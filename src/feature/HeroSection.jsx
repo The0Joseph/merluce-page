@@ -7,24 +7,23 @@ export const HeroSection = () => {
             {/* // ? disign Modo MOBIL */}
             <div className='block md:hidden'>
                 <div className='relative'>
-                    <div>
-                        <img src={Banner} className='w-full' alt="" />
-                        <div class="absolute inset-0 bg-black/40"></div>
-                        <h1 className="mx-5 w-full font-semibold absolute bottom-40 left-0 text-7xl text-white md:text-[#2D4A22] font-[100] leading-tight py-5">
-                            <span>Descubre</span> <br />
+                    <img src={Banner} className='w-full' alt="" />
+                    <div className="absolute inset-0 bg-black/40"></div>
+                    <div className="absolute bottom-0 w-full px-5 py-10 text-white">
+                        <h1 className="text-5xl font-light leading-tight">
+                            <span>Descubre</span><br />
                             <span>Merluce</span>
                         </h1>
-                    </div>
-                </div>
-                <div className='absolute -bottom-30 left-0 z-10 bg-white rounded-xl'>
-                    <div className='m-5'>
-                        <p className=" text-lg text-[#2D4A22] lg:mr-70 font-serif leading-loose ">Merluce es tu tienda de abarrotes de confianza, con mas de 10 años ofreciendo productos escenciales, atención amable y un servicio con valores como la responsabilidad y dedicación.</p>
-                        <div className='mt-10 text-center'>
-                            <a href="#" className='mt-8 px-15 py-4 bg-[#2D4A22] text-white rounded-full text-[14px] hover:bg-green-900 transition duration-300'>
-                                Explorar
-                            </a>
+                        <div className=''>
+                            <p className="mt-4 text-lg font-serif leading-loose">
+                                Merluce es tu tienda de abarrotes de confianza, con mas de 10 años ofreciendo productos escenciales, atención amable y un servicio con valores como la responsabilidad y dedicación.
+                            </p>
+                            <div className='mt-6 text-center'>
+                                <a href="#" className='px-6 py-3 bg-[#2D4A22] text-white rounded-full text-[14px] hover:bg-green-900 transition duration-300'>
+                                    Explorar
+                                </a>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
