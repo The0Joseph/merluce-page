@@ -3,19 +3,19 @@ import Banner from '../assets/img/banner-merluce.jpg'
 
 export const HeroSection = () => {
     return (
-        <div className='relative'>
+        <div className='relative '>
             {/* // ? disign Modo MOBIL */}
             <div className='block md:hidden'>
                 <div className='relative'>
                     <img src={Banner} className='w-full' alt="" />
                     <div className="absolute inset-0 bg-black/40"></div>
-                    <div className="absolute bottom-0 w-full px-5 py-10 text-white">
-                        <h1 className="text-5xl font-light leading-tight">
+                    <div className="absolute bottom-0 w-full  text-white">
+                        <h1 className="text-5xl font-light leading-tight px-5 py-10">
                             <span>Descubre</span><br />
                             <span>Merluce</span>
                         </h1>
-                        <div className=''>
-                            <p className="mt-4 text-lg font-serif leading-loose">
+                        <div className='bg-white px-5 py-5 rounded-t-2xl'>
+                            <p className="mt-4 text-lg font-serif leading-loose text-black">
                                 Merluce es tu tienda de abarrotes de confianza, con mas de 10 años ofreciendo productos escenciales, atención amable y un servicio con valores como la responsabilidad y dedicación.
                             </p>
                             <div className='mt-6 text-center'>
